@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="biodata" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="nama_siswa">
+<input type="submit" value="Submit">
+</form>
+
+
+<script>
+
+function validateForm() {
+	let x = document.forms["biodata"]["nama_siswa"].value;
+
+    alert("ok"+x)
+/// return true
+    return (x != "")
+    
+}
+</script>
+
+<p>If you click submit, without filling out the text field,
+your browser will display an error message.</p>
+
+</body>
+</html>

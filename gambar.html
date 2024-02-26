@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<img id="gambar" src= "landscape.jpg" width="100" height="100">
+ 
+<p>
+<button id="zoomOut" onclick="fZoomOut()">zoom out</button>
+<button id="zoomIn" onclick="fZoomIn()">zoom in</button>
+</p>
+
+<script>
+///document.getElementById("gambar").src = "landscape.jpg";
+//document.getElementById("gambar").width = "100";
+//document.getElementById("gambar").height = "200";
+
+function fZoomIn(){
+	gambar.width = "300";
+    gambar.height = "300";
+	alert ("fZoomIn");
+}
+
+function fZoomOut(){
+	gambar.width = "100";
+    gambar.height = "100";
+	alert ("fZoomOut");
+}
+
+</script>
+
+<p>The original image was smiley.gif, but the script changed it to landscape.jpg</p>
+
+</body>
+</html>
+
+
